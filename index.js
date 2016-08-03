@@ -19,7 +19,7 @@ app.get('/', index.get)
 app.get('/getUser', function (req, res) {
   stuff.getUser()
     .then(function (profiles) {
-      res.render('profiles', {profiles:profiles })
+      res.render('index', {profiles:profiles })
     })
     .catch(function (err) {
       res.status(500).send('SOMETHING BAD HAPPENED')

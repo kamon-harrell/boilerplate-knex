@@ -1,4 +1,4 @@
-var development = require('./knexfile').development
+var development = require('../knexfile').development
 var knex = require('knex')(development)
 
 function getUser () {
