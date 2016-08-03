@@ -5,13 +5,8 @@
   </head>
   <body>
     <ul>
-    {{#each profiles}}
-      <li>{{name}} ({{email}})</li>
-    {{/each}}
-    </ul>
-    <ul>
     {{#each users}}
-      <li>{{name}} ({{email}})</li>
+      <li><a href="/profiles/{{id}}">{{name}} ({{email}})</a></li>
     {{/each}}
     </ul>
   </body>
